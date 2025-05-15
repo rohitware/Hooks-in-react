@@ -2,6 +2,7 @@
 import './App.css'
 import Comment from './useState/Comment'
 import Loading from './useState/Loading'
+import UserForm from './useState/UserForm'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
    <h2>useState Hook in react</h2>
    <Comment />
    <Loading />
+   <UserForm/>
     </>
   )
 }
