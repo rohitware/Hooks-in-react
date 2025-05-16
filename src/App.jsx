@@ -1,19 +1,21 @@
-
-import './App.css'
-import Comment from './useState/Comment'
-import Loading from './useState/Loading'
-import UserForm from './useState/UserForm'
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import UseStateRoutes from "./useState/UseStateRoutes";
+import UseEffectRoutes from "./useEffect/UseEffectRoutes";
 
 function App() {
-
   return (
-    <>
-   <h2>useState Hook in react</h2>
-   <Comment />
-   <Loading />
-   <UserForm/>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Layout wraps all these routes */}
+        <Route path="/" element={<Layout />}>
+          <Route path="use-state" element={<UseStateRoutes />} />
+          <Route path="use-effect" element={<UseEffectRoutes />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
