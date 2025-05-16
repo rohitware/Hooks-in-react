@@ -5,7 +5,6 @@ const Comment = () => {
 
   function HandleClick() {
     setTitle("Good Evening");
-    console.log(title);
     
   }
 

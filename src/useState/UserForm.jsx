@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 
 function UserForm() {
-  const initialObject = {
-    username: "",
-    password: "",
-  };
-  const [user, setUser] = useState(initialObject);
+  const [user, setUser] = useState({
+    username: "Rohit",
+    password: "1234",
+  });
 
-  function handleChange(e) {
+  function handleUserNameChange(e) {
     setUser({
       ...user,
-      [e.target.name]: e.target.value,
+      username: e.target.value,
+    });
+  }
+
+  function handlePasswordChange(e) {
+    setUser({
+      ...user,
+      password: e.target.value,
     });
   }
 
@@ -21,14 +27,14 @@ function UserForm() {
       <form>
         <label>
           UserName:
-          <input type="text" name="username" onChange={handleChange} />
+          <input type="text" name="username" onChange={handleUserNameChange} />
         </label>
         <br></br>
         <br></br>
 
         <label>
           Password:
-          <input type="text" name="password" onChange={handleChange} />
+          <input type="text" name="password" onChange={handlePasswordChange} />
         </label>
       </form>
     </>
