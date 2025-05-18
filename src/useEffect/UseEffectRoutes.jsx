@@ -1,8 +1,10 @@
-const UseEffectRoutes = ()=>{
-    return (
-        <>
-        
-        </>
-    )
-}
-export default UseEffectRoutes
+import Timer from "./Timer";
+
+const UseEffectRoutes = () => {
+  return (
+    <>
+      <Timer />
+    </>
+  );
+};
+export default UseEffectRoutes;
