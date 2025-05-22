@@ -16,6 +16,11 @@ const Layout = () => {
                 Use Effect
               </Link>
             </li>
+               <li className="nav-item">
+              <Link className="nav-link" to="use-context">
+                Use Context
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
