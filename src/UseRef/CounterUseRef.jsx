@@ -12,6 +12,7 @@ function CounterUseRef() {
 
   return (
     <>
+      <h2>Does Not Cause Re-renders</h2>
       <p> Visible Count: {visibleCount}</p>
       <button onClick={handleClick}>Increment</button>
     </>
