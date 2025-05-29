@@ -23,7 +23,6 @@ const Layout = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="use-ref">
-                {" "}
                 Use Ref
               </Link>
             </li>
